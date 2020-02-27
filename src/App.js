@@ -1,33 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '/Users/rachelee/hello-world/src/profilephoto.JPG';
 import './App.css';
-import {
-  FacebookShareCount,
-  OKShareCount,
-  PinterestShareCount,
-  RedditShareCount,
-  TumblrShareCount
-} from "react-share";
+import Resizer from 'react-image-file-resizer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="Profile-Photo" alt="Profile Photo" />
+       
         <p>
-          Hello, World!
+          Hello! My name is Rachel and I am a sophomore at the University of Virginia studying Computer Science!    
+          Some things that I'm interested in include web development, self-driving cars, and cryptocurrency. 
+          I also love exploring food, travelling, and running!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/rachel-lee728/"
           target="_blank"
           rel="noopener noreferrer"       
         >
-          Learn React
+          LinkedIn profile
         </a>
       </header>
     </div>
   );
 }
+
 
 export default App;
